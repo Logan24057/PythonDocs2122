@@ -10,7 +10,7 @@ y=x+5
 age=16
 #float:any number with a decimal, positive or negative
 grade=98.6
-#String: a string of human-readable characters numbers in a strng are not numbers they are letters
+#String: a string of human-readable characters numbers in a string are not numbers they are letters
 name = "Logan"
 favoriteNumber="13"
 #Boolean: True or False
@@ -27,7 +27,7 @@ print(isSmart)
 print("My name is " + name)
 # you can use functions to convert datatypes
 print("and my age is " + str(age))
-#dont forget! if you wan to convert a value permantly you must assign the converted valuable to a variable
+#dont forget! if you want to convert a value permantly you must assign the converted valuable to a variable
 age= str(age)
 #you can convert back and forth with int(),str(),bool(), and float()
 print(int(age))
