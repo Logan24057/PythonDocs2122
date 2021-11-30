@@ -1,0 +1,85 @@
+#Logan
+
+userName=input("What is your name? ")
+
+#if username is equal to Vadim say "You owe me #5"
+if userName=="Vadim" :
+    print("You owe me $5 Vadim!!!")
+
+#if user name is Bob say "Long time no see."
+elif userName=="Bob":
+    print("Long time no see Bob, I've missed you man!!")
+# otherwise tell them you dont know them
+else:
+    print("I don't know who you are, nor do I care.")
+
+#Logan
+
+kittensToPunt=input("How many homeless kitten's would you like to punt? ")
+#change kittensToPunt into a int
+kittensToPunt=int(kittensToPunt)
+
+puntCounter=0
+
+print(puntCounter)
+#create a while loop that loops until there are no kittens left to punt
+while puntCounter<=kittensToPunt:
+    print("You successfully punted a kitten!")
+    #every time a kitten is punted add one to the punt counter
+    puntCounter+= 1
+    print()
+    #print "Kittens left to punt" + kittensToPunt minus puntCounter as a string
+    print("Kittens left to punt " + str(kittensToPunt-puntCounter))
+    print()
+    print(puntCounter)
+
+
+#Logan
+
+#import the random module
+import random
+
+#ask user a yes or no question
+userquestion=input("Are you an idiot?")
+
+#generate number between 1 and 4
+randNumb=random.randint(1, 4)
+
+# if random number is equal to 1 say yes
+if randNumb == 1:
+    print("yes")
+#if random number is equal to 2 say maybe
+elif randNumb== 2:
+    print("Maybe")
+#if random number is equal to 3 say no
+elif randNumb== 3:
+    print("No")
+#if random number equals 4 say "Why would you even ask that? What is wrong with you? Do you need a therapist? Shame."
+elif randNumb== 4:
+    print("Why would you even ask that? What is wrong with you? Do you need a therapist? Shame.")
+
+
+#Logan
+
+#ask the user how much they enjoy computer programming on a scale of 1-10
+userScale=input("On a scale of 1-10, how much do you enjoy Computer Programming Class? ")
+
+#convert the users answer to an integer
+userScale=int(userScale)
+
+#if the users answer equals 10 or 9 have is say "I think programming is great too"
+if userScale== 10 or userScale== 9:
+    print("I think programming is great, too.")
+    print()
+#if the users answer equals 8 or 7 say "Im glad you enjoy it"
+elif userScale == 8 or userScale==  7:
+    print("Im glad you enjoy it.")
+    print()
+#if the users answer equals 6 or 5 say "Well programming isnt for everyone"
+elif userScale== 6 or userScale== 5:
+     print("Well programming isn't for everyone.")
+     print()
+#otherwise say "That's ok. I'm sure you will make a good burger-flipper one day."
+else:
+    print("That's ok. I'm sure you will make a good burger-flipper one day.")
+
