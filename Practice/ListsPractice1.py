@@ -5,7 +5,7 @@ programRunning = True
 itemList=[]
 
 while programRunning:
-    userInput = input('Add,Remove, or Quit ')
+    userInput = input('Add,Remove, or Quit. ')
     print()
     if userInput.lower()== 'add':
         userInput=input('What do you want to add? ')
@@ -23,6 +23,8 @@ while programRunning:
     else:
         print('Your choice is invalid.')
 
+
+    print()
     for item in itemList:
         print(item)
         print()

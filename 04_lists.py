@@ -45,3 +45,9 @@ if 'milk' in groceries:
     print('yes')
 else:
     print('no')
+
+
+#how to use for loops
+print("here is each item in the grocery list")
+for food in groceries:
+    print(food)
