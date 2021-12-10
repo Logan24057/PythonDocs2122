@@ -11,7 +11,7 @@ def ball_anim():
         ball_speed_x *= -1
         ball_restart()
     if ball.colliderect(player) or ball.colliderect(opponent):
-            ball_speed_x*= -1
+            ball_speed_x*= -2
 
 def player_anim():
     player.y+=player_speed
@@ -61,10 +61,6 @@ ball_speed_x=7*random.choice((1,-1))
 ball_speed_y=7 *random.choice((1,-1))
 player_speed=0
 opponent_speed=7
-
-playerScore=0
-opponentScore=0
-gameFont=pygame.font.Front("freesansbold.ttf", 32)
 while True:
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
@@ -90,7 +86,6 @@ while True:
     pygame.draw.rect(screen,light_grey,opponent)
     pygame.draw.ellipse(screen,light_grey, ball)
     pygame.draw.aaline(screen,light_grey,(screen_width/2,0),(screen_width/2,screen_height))
-    playerText=gameFont.render(f"{playerScore}",False, light_grey)
-    screen.blit(playerText)
+
     pygame.display.flip()
     clock.tick(60)
